@@ -12,7 +12,7 @@ variable "panoptica_server_url" {
 
 variable "cluster" {
   type = object({
-    kubernetes_cluster_context                      = string # (String) The k8s context name of the cluster
+    context                                         = string # (String) The k8s context name of the cluster
     name                                            = string # (String) The name of cluster in SecureCN
     api_intelligence_dast                           = optional(bool) # (Boolean) Enable API Intelligence DAST integration
     auto_labeling                                   = optional(bool) # (Boolean) Enable auto labeling of Kubernetes namespaces
