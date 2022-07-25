@@ -1,15 +1,3 @@
-variable "panoptica_access_key" {
-  type = string
-}
-
-variable "panoptica_secret_key" {
-  type = string
-}
-
-variable "panoptica_server_url" {
-  type = string
-}
-
 variable "cluster" {
   type = object({
     context                                         = string # (String) The k8s context name of the cluster
